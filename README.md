@@ -9,10 +9,11 @@ Originele versie (Duits) ontwikkeld door Nerdissimo (https://github.com/nerdissi
 2. Upload Plugin via WP-admin > Plugins > Nieuwe Plugin (upload woocommerce-statiegeld.zip)
 3. Ga naar Woocommerce > Settings / Instellingen > Statiegeld
 4. Voeg vier soorten toe (ALTIJD MET PUNT, NIET MET KOMMA!):
-		a. Naam: 0.10 | Slug: statiegeld-10-cent | Beschrijving: 10 cent statiegeld (bierflesje 0.3L)
-		b. Naam: 0.15 | Slug: statiegeld-15-cent | Beschrijving: 15 cent statiegeld (plastic flesje 0.25L)
-		c. Naam: 0.25 | Slug: statiegeld-25-cent | Beschrijving: 25 cent statiegeld (PET-fles groot 1.5L)
-		d. Naam: 3.90 | Slug: statiegeld-390-cent | Beschrijving: 3.90 euro statiegeld (krat/bierkrat)
+		
+		Naam: 0.10 | Slug: statiegeld-10-cent | Beschrijving: 10 cent statiegeld (bierflesje 0.3L)
+		Naam: 0.15 | Slug: statiegeld-15-cent | Beschrijving: 15 cent statiegeld (plastic flesje 0.25L)
+		Naam: 0.25 | Slug: statiegeld-25-cent | Beschrijving: 25 cent statiegeld (PET-fles groot 1.5L)
+		Naam: 3.90 | Slug: statiegeld-390-cent | Beschrijving: 3.90 euro statiegeld (krat/bierkrat)
 		
 ## GEBRUIK van plugin:
 5. Kies een product waarop statiegeld toegevoegd moet worden (WP-admin > Producten)
