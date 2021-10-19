@@ -18,7 +18,7 @@ Originele versie (Duits) ontwikkeld door Nerdissimo (https://github.com/nerdissi
 5. Kies een product waarop statiegeld toegevoegd moet worden (WP-admin > Producten)
 6. Rechts in het scherm staat een venster 'Statiegeld'. Voeg hier 0.10 of 0.15 of 0.25 of 3.90 toe. (ALTIJD MET PUNT, NIET MET KOMMA!)
 7. Kies 'Update'.
-8. Bekijk het product in de winkelpagina
+8. Bekijk het product op de winkelpagina
 9. Leg het product in de winkelwagen
 10. Naast de prijs van het product wordt getoond: incl. statiegeld van €0,25
 11. In subtotaal wordt getoond: Totaal statiegeld: € 0,25
