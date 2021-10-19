@@ -3,6 +3,8 @@ Statiegeld plugin voor Woocommerce (Wordpress)
 
 Originele versie (Duits) ontwikkeld door Nerdissimo (https://github.com/nerdissimo-de/woocommerce-pfand), plugin aangepast voor de Nederlandse markt
 
+Vragen over doorontwikkeling of ontwikkeling op maat: info [at] thijsotter [dot] nl
+
 ## Installatie:
 
 1. Download woocommerce-statiegeld.zip
