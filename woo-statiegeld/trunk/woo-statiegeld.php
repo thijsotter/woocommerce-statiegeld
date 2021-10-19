@@ -1,0 +1,70 @@
+<?php
+
+/**
+ * The plugin bootstrap file
+ *
+ * @link              http://www.thijsotter.nl/
+ * @since             1.0.0
+ * @package           Woo_Statiegeld
+ *
+ * @wordpress-plugin
+ * Plugin Name:       Statiegeld voor WooCommerce
+ * Plugin URI:        http://www.thijsotter.nl/
+ * Description:       Deze plugin voegt statiegeld toe voor Nederlandse/Nederlandstalige webshops
+ * Version:           1.0.0
+ * Author:            Thijs Otter
+ * Author URI:        http://www.thijsotter.nl/
+ * License:           GPL-3.0+
+ * License URI:       http://www.gnu.org/licenses/gpl-3.0.txt
+ * Text Domain:       woo-statiegeld
+ * Domain Path:       /languages
+ */
+
+// If this file is called directly, abort.
+if ( ! defined( 'WPINC' ) ) {
+	die;
+}
+
+/**
+ * The code that runs during plugin activation.
+ * This action is documented in includes/class-woo-statiegeld-activator.php
+ */
+function activate_woo_statiegeld() {
+	require_once plugin_dir_path( __FILE__ ) . 'includes/class-woo-statiegeld-activator.php';
+	Woo_Statiegeld_Activator::activate();
+}
+
+/**
+ * The code that runs during plugin deactivation.
+ * This action is documented in includes/class-woo-statiegeld-deactivator.php
+ */
+function deactivate_woo_statiegeld() {
+	require_once plugin_dir_path( __FILE__ ) . 'includes/class-woo-statiegeld-deactivator.php';
+	Woo_Statiegeld_Deactivator::deactivate();
+}
+
+register_activation_hook( __FILE__, 'activate_woo_statiegeld' );
+register_deactivation_hook( __FILE__, 'deactivate_woo_statiegeld' );
+
+/**
+ * The core plugin class that is used to define internationalization,
+ * dashboard-specific hooks, and public-facing site hooks.
+ */
+require plugin_dir_path( __FILE__ ) . 'includes/class-woo-statiegeld.php';
+
+/**
+ * Begins execution of the plugin.
+ *
+ * Since everything within the plugin is registered via hooks,
+ * then kicking off the plugin from this point in the file does
+ * not affect the page life cycle.
+ *
+ * @since    1.0.0
+ */
+function run_woo_statiegeld() {
+
+	$plugin = new Woo_Statiegeld();
+	$plugin->run();
+
+}
+run_woo_statiegeld();
