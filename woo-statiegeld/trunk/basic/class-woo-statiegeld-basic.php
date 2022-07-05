@@ -123,6 +123,10 @@ class Woo_Statiegeld_Basic {
 
         $dep_total = 0;
         $tax = $tax_class = false;
+		
+		// YOU CAN COMMENT  THIS OUT IF YOU WOULD LIKE TO SPECIFY A SPECIFIC TAX CLASS
+		//  $tax = 0;
+		//	$tax_class = 'zero-rate';
 
         foreach( WC()->cart->get_cart() as $cart_item )
             $dep_total = $dep_total + $this->get_deposit( $cart_item['product_id'], $cart_item['quantity'] );
