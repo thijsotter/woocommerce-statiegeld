@@ -10,9 +10,11 @@ Vragen over doorontwikkeling of ontwikkeling op maat: info [at] thijsotter [dot]
 1. Download woocommerce-statiegeld.zip
 2. Upload Plugin via WP-admin > Plugins > Nieuwe Plugin (upload woocommerce-statiegeld.zip)
 3. Ga naar Woocommerce > Settings / Instellingen > Statiegeld
-	Wijzig instellingen naar wens
 
-4. Ga naar WooCommerce > Producten > Statiegeld 
+	[ Wijzig instellingen naar wens ]
+
+4. Ga naar WooCommerce > Producten > Statiegeld.
+
 Voeg vier soorten toe (ALTIJD MET PUNT, NIET MET KOMMA!):
 		
 		Naam: 0.10 | Slug: statiegeld-10-cent | Beschrijving: 10 cent statiegeld (bierflesje 0.3L)
