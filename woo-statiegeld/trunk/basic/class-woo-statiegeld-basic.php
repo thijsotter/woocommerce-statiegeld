@@ -77,7 +77,7 @@ class Woo_Statiegeld_Basic {
             $price_display_suffix = preg_replace( '/<\/small>/', '', $price_display_suffix, 1 ); // removes </small>
 
             $price_display_suffix .= '<br />';
-            $price_display_suffix .= sprintf( __( 'incl. statiegeld van %s', $this->woo_statiegeld ), wc_price( $dep_total ) );
+            $price_display_suffix .= sprintf( __( 'excl. statiegeld van %s', $this->woo_statiegeld ), wc_price( $dep_total ) );
 
             $price_display_suffix .= '</small>';
 
@@ -106,7 +106,7 @@ class Woo_Statiegeld_Basic {
         $dep_total = $this->get_deposit( $values['product_id'], $qty );
 
         if( ! empty( $dep_total ) )
-            return $product_price . '<br /><small class="deposit_label">' .  sprintf( __( 'incl. statiegeld van %s', $this->woo_statiegeld ), wc_price( $dep_total ) ) . '</small>';
+            return $product_price . '<br /><small class="deposit_label">' .  sprintf( __( 'excl. statiegeld van %s', $this->woo_statiegeld ), wc_price( $dep_total ) ) . '</small>';
  
         return $product_price;
     }
